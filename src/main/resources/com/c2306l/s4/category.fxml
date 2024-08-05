@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.c2306l.s4.Controller.CategoryController"
+            prefHeight="323.0" prefWidth="188.0" minWidth="0" minHeight="0">
+    <children>
+        <TextField fx:id="txtCode" layoutX="14" layoutY="31" prefHeight="25" prefWidth="199" promptText="Enter Category Id"/>
+        <TextField fx:id="txtName" layoutX="14" layoutY="85" prefHeight="25" prefWidth="363" promptText="Enter Category Name"/>
+        <TextField fx:id="txtDescription" layoutX="14" layoutY="132" prefHeight="184" prefWidth="363" promptText="Enter Category Description"/>
+    </children>
+
+
+    <TableView fx:id="tableCategory" layoutX="14" layoutY="14" prefHeight="418" prefWidth="510">
+        <columns>
+            <TableColumn fx:id="cid" prefWidth="75" text="ID"/>
+            <TableColumn fx:id="ccode" prefWidth="75" text="Code"/>
+            <TableColumn fx:id="cname" prefWidth="75" text="Name"/>
+            <TableColumn fx:id="cdescription" prefWidth="350" text="Description"/>
+        </columns>
+        <Button fx:id="btnNewCategory" layoutX="531" layoutY="395" mnemonicParsing="false" text="Create New Category" textFill="#1333c3"/>
+        <Button layoutX="770" layoutY="395" mnemonicParsing="false" text="Delete" textFill="#c91313"/>
+        <Button fx:id="btnEditCategory" layoutX="858" layoutY="395" mnemonicParsing="false" text="Update" textFill="#bc18a1"/>
+    </TableView>
+</AnchorPane>

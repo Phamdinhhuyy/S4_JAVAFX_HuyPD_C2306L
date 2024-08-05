@@ -9,4 +9,6 @@ module com.c2306l.s4 {
 
     opens com.c2306l.s4 to javafx.fxml;
     exports com.c2306l.s4;
+    exports com.c2306l.s4.Controller;
+    opens com.c2306l.s4.Controller to javafx.fxml;
 }
